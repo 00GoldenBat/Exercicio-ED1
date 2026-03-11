@@ -10,7 +10,12 @@ typedef struct{
     char name[MAX_NAME];
     char num[MAX_NUMBER];
 } contact;
-
+/**
+ * Formata uma string de números para o padrão (XX) XXXXX-XXXX
+ * @param entrada String com os números puros
+ * @param saida Buffer onde o número formatado será guardado
+ */
+void formatar_telefone(char*, char*);
 /**
  * Cria novo contato
  * @param char nome do contato
